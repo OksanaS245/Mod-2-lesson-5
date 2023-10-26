@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Погружение в верстку</title>
+    <meta name="description" content="Описание сайта">
+    <meta name="keywords" content="ключевые, слова, сайта">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+     <!--OG tags-->
+     <meta name="og:title" content="Погружение в верстку">
+     <meta name="og:description" content="Описание сайта">
+     <meta name="og:type" content="article">
+     <meta name="og:image" content="https://screenshot.png">
+     <meta name="og:site_name" content="test">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header-section">
+        <div class="container">
+            <div class="menu-wrapper">
+                <a href="#" class="menu__logo" src="img/logo.png"></a>
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#">Главная</a></li>
+                        <li class="menu__item"><a href="#">Таблицы</a></li>
+                        <li class="menu__item"><a href="#">Видео</a></li>
+                        <li class="menu__item"><a href="#">Форма</a></li>
+                        <li class="menu__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>  
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-wrapper">
+                <div class="offer">
+                    <h1 class="offer__title">Продвинутая верстка с Кодомашиной</h1>
+                    <p class="offer__text">Если вы хотите овладеть навыками, необходимыми для создания привлекательных и функциональных веб-страниц, то этот урок идеально подходит для вас</p>
+                    <button class="offer__button"><a href="#">Перейти к практике</a></button>
+                </div>
+                <img src="img/{ }.png" alt="parentheses">
+                <img class="offer__image" src="/img/image.png" alt="offer">
+            </div>
+        </div>
+    </section>
+    <section class="table-section">
+        <div class="container">
+            <div class="table-section-wrapper">
+                <h2 class="section__title">Мой путь обучения</h2>
+                <table class="table">
+                    <tr class="table__row table__row_head">
+                        <th class="table__item">Скиллы</th>
+                        <th class="table__item">Задачи</th>
+                        <th class="table__item">Мотивация</th>
+                        <th class="table__item">Отлых</th>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__item">HTML-5</td>
+                        <td class="table__item">Соблюдать дедлайны</td>
+                        <td class="table__item">Новая профессия</td>
+                        <td class="table__item">Фильм "The Social Network"</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__item">CSS3</td>
+                        <td class="table__item">Практика и еще раз практика</td>
+                        <td class="table__item">Независимость</td>
+                        <td class="table__item">Фильм "Ex Machina"</td>
+                    </tr class="table__row"> 
+                        <td class="table__item">JavaScript</td>
+                        <td class="table__item">Помогать команде</td>
+                        <td class="table__item">Свобода</td>
+                        <td class="table__item">Серия фильмов  "The Matrix"</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    <section class="video-section">
+        <div class="container">
+            <div class="video-section-wrapper">
+                <h2 class="section__title">Приятного просмотра</h2>
+                <video width="700" height="379" controls="controls" poster="img/imgvideo.png">
+                    <source src="#" type='video/mp4; codecs="avc1.42E01E,mp4a.40.2"'>
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="container">
+            <div class="form-section-wrapper">
+                <form class="form" action="#" method="post">
+                    <h2 class="section__title">Напиши мне</h2>
+                    <!-- обернули во враппер для того чтобы инпуты были в одну строку -->
+                    <div class="input-wrapper">
+                        <div>
+                            <label class="input__name" for="name">Имя</label>
+                            <input class="input__item" type="text" name="name" id="name" required placeholder="Введите свое имя">
+                        </div>
+                        <!--required обязательно для заполнения  -->
+                        <div>
+                            <label class="input__name" for="phone">Телефон</label>
+                            <input type="tel" name="phone" class="input__item" id="phone" required  pattern="[0-9]{10}" placeholder="Введите свой телефон">
+                        </div>
+                        <button type="submit" class="input__submit">Отправить</button>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="radio-wrapper">
+                            <div>
+                                <input class="radio" type="radio" name="radio" id="sign" value="sign" checked> 
+                                <label class="radio__name" for="sign">Подписаться</label>
+                            </div>
+                            <!-- checked - по умолчанию -->
+                            <div>
+                                <input type="radio" name="radio" id="escape" value="escape">
+                                <label class="radio__name" for="escape">Пропустить</label>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <div>
+                                <input type="checkbox" class="checkbox__item" name="add" id="add" value="add" checked>
+                                <label class="checkbox__name" for="add">Добавить</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox__item" name="later" id="later" value="later">
+                                <label class="checkbox__name" for="later">Напомнить позже</label>
+                            </div>
+                        </div>
+                            <div class="button-wrapper">
+                                <div>
+                                    <input type="radio" class="button__item" name="swith" id="on" checked value="on">
+                                    <label class="" for="on">Включить</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="button__item" name="swith" id="off" checked value="off">
+                                    <label class="" for="off">Выключить</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#" class="menu__logo menu__logo_footer" src="img/logo.png"></a>
+                <nav class="menu__nav menu__nav_footer">
+                    <ul class="menu__list menu__list_footer">
+                        <li class="menu__item menu__item_footer"><a href="#">Главная</a></li>
+                        <li class="menu__item menu__item_footer"><a href="#">Таблицы</a></li>
+                        <li class="menu__item menu__item_footer"><a href="#">Видео</a></li>
+                        <li class="menu__item menu__item_footer"><a href="#">Форма</a></li>
+                        <li class="menu__item menu__item_footer"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="offer__button offer__button_footer"><a href="#">Перейти к практике</a></button>
+            </div> 
+        </div>
+
+    </footer>
+</body>
+</html>
+
+   <section class="table-section">
+        <div class="container">
+            <h2 class="section__title">Мой путь обучения</h2>
+            <table class="table">
+                <tr class="table__row table__row_head">
+                    <th class="table__item">Скиллы</th>
+                    <th class="table__item">задачи</th>
+                    <th class="table__item">мотивация</th>
+                    <th class="table__item">отдых</th>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">HTML5</td>
+                    <td class="table__item">Соблюдать дедлайны</td>
+                    <td class="table__item">Новая профессия</td>
+                    <td class="table__item">Фильм "The Social Network"</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">CSS3</td>
+                    <td class="table__item">Практика и еще раз практика</td>
+                    <td class="table__item">Независимость</td>
+                    <td class="table__item">Фильм "Ex Machina"</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">JavaScript</td>
+                    <td class="table__item">Помогать команде</td>
+                    <td class="table__item">Свобода</td>
+                    <td class="table__item">Серия фильмов  "The Matrix"</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="viseo-section">
+        <div class="container">
+            <h2 class="section__title">Приятного просмотра</h2>
+            <div class="videos-wrapper">
+
+            </div>
+
+           
+
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="section__title">Напиши мне</h2>
+                <form action="" class="form" method="POST">
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="name" class="input__name">Имя</label>
+                            <input class="input__item" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="input__name">Телефон</label>
+                            <input class="input__item" type="tel" name="phone" placeholder="Введите ваш телефон" id="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <button type="submit" class="input__submit">Отправить</button>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="radio-wrapper">
+                            <div>
+                                <input type="radio" name="radio" id="sign" value="sign" checked class="radio">
+                                <label for="sign">Подписаться</label>
+                            </div>
+                           
+                            <div>
+                                <input type="radio" name="radio" id="escape" value="escape" class="radio">
+                                <label for="escape">Пропустить</label>
+                            </div>
+                                                   
+                        </div>
+                        <div class="box-wrapper">
+                            <div>
+                                <input type="checkbox" name="add" id="add" checked value="add" class="checkbox">
+                                <label for="add">Добавить</label>
+                            </div>
+                           
+                            <div>
+                               <input type="checkbox" name="later" id="later" value="later" class="checkbox">                            
+                                <label for="later">Напомнить позже</label>
+                            </div>
+                           
+                        </div>
+                        <div class="button-wrapper">
+                            <div>
+                                <input type="radio" name="switch" id="on" value="on" checked class="switch">
+                                <label for="on">Включить</label>
+                            </div>
+                             
+                            <div>
+                                <input type="radio" name="switch" id="off" value="off" class="switch">
+                                <label for="off">Выключить</label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+
+                </form>
+            </div>
+           
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="menu">
+                <a href="#" class="menu__logo menu__logo_footer"></a>
+                    <nav class="menu__nav">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_active"><a href="#">Главная</a></li>
+                            <li class="menu__item"><a href="#">Таблицы</a></li>
+                            <li class="menu__item"><a href="#">Видео</a></li>
+                            <li class="menu__item"><a href="#">Форма</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="offer__btn offer__btn_footer">Перейти к практике</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<!--    <section class="table-section">
+        <div class="container">
+            <h2 class="section__title">Мой путь обучения</h2>
+            <table class="table">
+                <tr class="table__row table__row_head">
+                    <th class="table__item">Скиллы</th>
+                    <th class="table__item">задачи</th>
+                    <th class="table__item">мотивация</th>
+                    <th class="table__item">отдых</th>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">HTML5</td>
+                    <td class="table__item">Соблюдать дедлайны</td>
+                    <td class="table__item">Новая профессия</td>
+                    <td class="table__item">Фильм "The Social Network"</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">CSS3</td>
+                    <td class="table__item">Практика и еще раз практика</td>
+                    <td class="table__item">Независимость</td>
+                    <td class="table__item">Фильм "Ex Machina"</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__item">JavaScript</td>
+                    <td class="table__item">Помогать команде</td>
+                    <td class="table__item">Свобода</td>
+                    <td class="table__item">Серия фильмов  "The Matrix"</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="viseo-section">
+        <div class="container">
+            <h2 class="section__title">Приятного просмотра</h2>
+            <div class="videos-wrapper">
+
+            </div>
+
+           
+
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h2 class="section__title">Напиши мне</h2>
+                <form action="" class="form" method="POST">
+                    <div class="input-wrapper">
+                        <div>
+                            <label for="name" class="input__name">Имя</label>
+                            <input class="input__item" type="text" name="name" placeholder="Введите ваше имя" id="name" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="input__name">Телефон</label>
+                            <input class="input__item" type="tel" name="phone" placeholder="Введите ваш телефон" id="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <button type="submit" class="input__submit">Отправить</button>
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="radio-wrapper">
+                            <div>
+                                <input type="radio" name="radio" id="sign" value="sign" checked class="radio">
+                                <label for="sign">Подписаться</label>
+                            </div>
+                           
+                            <div>
+                                <input type="radio" name="radio" id="escape" value="escape" class="radio">
+                                <label for="escape">Пропустить</label>
+                            </div>
+                                                   
+                        </div>
+                        <div class="box-wrapper">
+                            <div>
+                                <input type="checkbox" name="add" id="add" checked value="add" class="checkbox">
+                                <label for="add">Добавить</label>
+                            </div>
+                           
+                            <div>
+                               <input type="checkbox" name="later" id="later" value="later" class="checkbox">                            
+                                <label for="later">Напомнить позже</label>
+                            </div>
+                           
+                        </div>
+                        <div class="button-wrapper">
+                            <div>
+                                <input type="radio" name="switch" id="on" value="on" checked class="switch">
+                                <label for="on">Включить</label>
+                            </div>
+                             
+                            <div>
+                                <input type="radio" name="switch" id="off" value="off" class="switch">
+                                <label for="off">Выключить</label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+
+                </form>
+            </div>
+           
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="menu">
+                <a href="#" class="menu__logo menu__logo_footer"></a>
+                    <nav class="menu__nav">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_active"><a href="#">Главная</a></li>
+                            <li class="menu__item"><a href="#">Таблицы</a></li>
+                            <li class="menu__item"><a href="#">Видео</a></li>
+                            <li class="menu__item"><a href="#">Форма</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="offer__btn offer__btn_footer">Перейти к практике</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> -->

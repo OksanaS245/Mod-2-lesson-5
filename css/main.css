@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1420px;
+    margin: 0;
+       }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    font-family: "Lora", serif;
+}
+input{
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding-top: 170px;
+   }
+.section__title{
+    margin-bottom: 65px;
+}
+
+.header-section{
+    background: #1A71CE;
+    padding: 35px 0 5px;
+}
+.menu-wrapper{
+    display: flex;
+    align-items: center;
+}
+.menu__logo{
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    width: 189px;
+    height: 32px;
+    display: block;
+    margin-right: 265px;
+}
+.menu__list{
+    display: flex;
+    gap: 60px;
+}
+.menu__item{
+    font-size: 14px;
+}
+.menu__item>a{
+    transition: color .5s ease;
+}
+.menu__item>a:hover{
+    color: #372E46;
+    transition: color .5s ease;
+}
+
+.offer-section{
+    background: #1A71CE;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 112px;
+    overflow-x: hidden;
+}
+.offer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer{
+    width: 688px;
+}
+.offer__text{
+    width: 608px;
+    padding: 25px 0 45px;
+    font-size: 20px;
+}
+.offer-image-wrapper{
+    position: relative;
+}
+.offer__bg{
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    right: -90px;
+    width: 865px;
+    height: 690px;
+}
+.offer__image{
+    position: relative;
+    z-index: 2;
+    width: 543px;
+    height: 551px;
+}
+.offer__button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 13px 34px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color .5s ease, background-color .5s ease;
+}
+.offer__button:hover{
+    background: #fff;
+    color: #1A71CE;
+    transition: color .5s ease, background-color .5s ease;
+}
